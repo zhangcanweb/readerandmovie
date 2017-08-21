@@ -57,3 +57,7 @@
   height: 50rpx;
   margin-top: 20px;
 } 
+.list-last text{
+  font-size: 30rpx;
+  font-weight: bold;
+}
