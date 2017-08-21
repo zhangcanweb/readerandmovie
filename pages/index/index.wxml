@@ -1,0 +1,7 @@
+<view class="classname user-index">
+  <image src="/Image/index.png"></image>
+    <text class="user-name">Hello 青春</text>
+    <view class="classname user-title">
+      <text class="">开启梦幻之旅</text>
+    </view>
+</view>
