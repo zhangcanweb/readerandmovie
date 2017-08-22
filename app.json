@@ -1,10 +1,10 @@
 {
   "pages":[
-    "pages/post/post",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/post/post"
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"#b3d4db",
     "navigationBarBackgroundColor": "#b3d4db",
     "navigationBarTitleText": "",
     "navigationBarTextStyle":"#b3d4db"

@@ -1,4 +1,5 @@
 <!--pages/post/post.wxml-->
+<import src="post-item/post-item.wxml"/>
 <view class="classname">
   <swiper class="lunbo" indicator-dots="true" indicator-color="rgba(255,200,188,.6)" autoplay="true" interval="3000" circular="false">
     <swiper-item>
@@ -11,58 +12,7 @@
       <image src="/Image/young-3.jpg"></image>
     </swiper-item>  
   </swiper>
-  <view class="classname" class="list">
-    <view class="classname" class="tx">
-      <image src="/Image/tx-1.jpg"></image>
-      <text>2017.01.01</text>
-    </view>
-    <view class="classname" class="list-img">
-      <image src="/Image/list-1.jpg"></image>
-    </view>
-    <view class="classname" class="list-txt">
-      <text>有的时候，背影才是美丽的风景，暗色的灯光，纤细的手掌，展现着青春的静之美</text>
-    </view>
-    <view class="classname" class="list-last">
-      <image src="/Image/star.png"></image>
-      <text>99</text>
-      <image src="/Image/eye.png"></image>
-      <text>520</text>
-    </view>
-  </view>
-  <view class="classname" class="list">
-    <view class="classname" class="tx">
-      <image src="/Image/tx-2.png"></image>
-      <text>2017.05.20</text>
-    </view>
-    <view class="classname" class="list-img">
-      <image src="/Image/list-2.jpg"></image>
-    </view>
-    <view class="classname" class="list-txt">
-      <text>有的时候，背影才是美丽的风景，暗色的灯光，纤细的手掌，展现着青春的静之美</text>
-    </view>
-    <view class="classname" class="list-last">
-      <image src="/Image/star.png"></image>
-      <text>991</text>
-      <image src="/Image/eye.png"></image>
-      <text>510</text>
-    </view>
-  </view>
-  <view class="classname" class="list">
-    <view class="classname" class="tx">
-      <image src="/Image/tx-3.jpg"></image>
-      <text>2017.08.15</text>
-    </view>
-    <view class="classname" class="list-img">
-      <image src="/Image/list-3.jpg"></image>
-    </view>
-    <view class="classname" class="list-txt">
-      <text>有的时候，背影才是美丽的风景，暗色的灯光，纤细的手掌，展现着青春的静之美</text>
-    </view>
-    <view class="classname" class="list-last">
-      <image src="/Image/star.png"></image>
-      <text>100</text>
-      <image src="/Image/eye.png"></image>
-      <text>400</text>
-    </view>
-  </view>
+<block wx:for="{{datas1}}" wx:for-item="item">
+ <template is="dataList" data="{{item}}"/>
+</block>
 </view>

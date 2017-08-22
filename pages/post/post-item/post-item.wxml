@@ -1,0 +1,20 @@
+<template name="dataList">
+   <view class="classname" class="list">
+    <view class="classname" class="tx">
+      <image src="{{item.tx}}" wx:if="{{true}}"></image>
+      <text>{{item.time}}</text>
+    </view>
+    <view class="classname" class="list-img">
+    <image src="{{item.img}}"></image>
+    </view>
+    <view class="classname" class="list-txt">
+      <text>{{item.txt}}</text>
+    </view>
+    <view class="classname" class="list-last">
+      <image src="/Image/star.png"></image>
+      <text>{{item.num1}}</text>
+      <image src="/Image/eye.png"></image>
+      <text>{{item.num2}}</text>
+    </view>
+  </view>
+</template>
