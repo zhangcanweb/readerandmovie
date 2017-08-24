@@ -1,6 +1,6 @@
 <view class="container">
-  <image src='{{detialArr.headImg}}' class='head-img'></image>
-  <image src='/Image/music-start.png' class="music-img"></image>
+  <image src="{{isPlay?detialArr.music.coverImg:detialArr.headImg}}" class='head-img'></image>
+  <image src="{{isPlay? '/Image/music-stop.png': '/Image/music-start.png'}}" catchtap='onMusicTap' class="music-img"></image>
   <view class="tx">
     <image src='{{detialArr.txImg}}' class="tx-img"></image>
     <text class="author">{{detialArr.author}}</text>
@@ -12,7 +12,7 @@
     <view class="circle-img">
       <image wx:if="{{collected}}" src='/Image/collection.png' catchtap='onCollectionTap'></image>
       <image wx:else src='/Image/collection-anti.png' catchtap='onCollectionTap'></image>
-      <image class='share-img' src='/Image/share.png'></image>
+      <image class='share-img' src='/Image/share.png' catchtap='onShareTap'></image>
     </view>
   <view class='horizon'></view>
   </view>
